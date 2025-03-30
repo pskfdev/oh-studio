@@ -17,7 +17,7 @@ function WelcomeForm({ setIsWelcome }: Props) {
       <div className="w-full mt-4 flex items-center space-x-4 py-5">
         <button
           type="button"
-          className="w-20 py-2 rounded-md text-white bg-blue-500"
+          className="w-20 py-2 rounded-md text-white bg-blue-500 cursor-pointer"
           onClick={() => setIsWelcome(false)}
         >
           Next

@@ -6,7 +6,6 @@ type Props = {
   nextStep: () => void;
   answers: OptionType;
   idData: number;
-  dataLength: number;
   setIsFinish: (state: boolean) => void;
 };
 
@@ -16,7 +15,6 @@ function ButtonForm({
   nextStep,
   answers,
   idData,
-  dataLength,
   setIsFinish,
 }: Props) {
   return (
@@ -30,7 +28,7 @@ function ButtonForm({
         Back
       </button>
 
-      {step < dataLength - 1 ? (
+      {Object.keys(answers).length < 3 ? (
         <button
           type="button"
           onClick={nextStep}

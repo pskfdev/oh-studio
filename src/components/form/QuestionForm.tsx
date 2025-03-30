@@ -80,7 +80,6 @@ function QuestionForm() {
             nextStep={nextStep}
             answers={answers}
             idData={steps[step]?.id}
-            dataLength={steps.length}
             setIsFinish={setIsFinish}
           />
 

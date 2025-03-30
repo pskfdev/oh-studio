@@ -18,7 +18,7 @@ function Question({ title, choice, handleSelect, name }: Props) {
 
       {/* ตัวเลือก */}
       <div className="space-y-2">
-        {choice.map((option) => (
+        {choice && choice.map((option) => (
           <div
             key={option}
             className="flex items-center ps-4 border border-slate-300 bg-slate-50 rounded-xl"

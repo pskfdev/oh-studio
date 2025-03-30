@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router";
 //Type
 import { DataType } from "../../types/response";
 
@@ -11,8 +10,7 @@ function ProductCard({ item }: Props) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <Link
-      to={`/shop/${item.id}`}
+    <div
       key={item.id}
       className="w-full h-full rounded-xl overflow-hidden relative"
       onMouseEnter={() => setIsHovered(true)}
@@ -42,7 +40,7 @@ function ProductCard({ item }: Props) {
           ></i>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
