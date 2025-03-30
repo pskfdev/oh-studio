@@ -5,7 +5,12 @@ function Notfound() {
     <section className="w-full h-screen text-center flex justify-center items-center">
       <div className="space-y-2">
         <h1>Page not found !</h1>
-        <Link to="/" className="text-sm bg-custom-cream p-3 rounded-md hover:bg-gray-200">Home page</Link>
+        <Link
+          to="/"
+          className="text-sm bg-custom-cream p-3 rounded-md hover:bg-gray-200"
+        >
+          Home page
+        </Link>
       </div>
     </section>
   );

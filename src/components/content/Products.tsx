@@ -16,7 +16,6 @@ function Products() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const json: DataType[] = await response.json();
-      console.log(json);
 
       setData(json);
     } catch (error) {

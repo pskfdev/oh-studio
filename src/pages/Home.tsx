@@ -5,7 +5,7 @@ import Products from "../components/content/Products";
 
 function Home() {
   return (
-    <div>
+    <div className="opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]">
       <BannerHome />
 
       <Products />
