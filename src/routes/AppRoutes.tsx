@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 /* import App from "../App"; */
 //Layout
@@ -9,9 +8,7 @@ import Profile from "../pages/Profile";
 import Contact from "../pages/Contact";
 import Notfound from "../pages/Notfound";
 
-type Props = {};
-
-function AppRoutes({}: Props) {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>

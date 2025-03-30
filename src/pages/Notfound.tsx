@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-function Notfound({}: Props) {
+function Notfound() {
   return <div>Notfound</div>;
 }
 

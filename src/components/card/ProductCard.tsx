@@ -32,7 +32,7 @@ function ProductCard({ item }: Props) {
         }`}
       >
         <div className="flex justify-between items-center">
-          <p className="text-white">Test</p>
+          <p className="text-white">{item?.id}</p>
           <i
             className={`bx bx-up-arrow-alt text-xl rotate-45 p-3 bg-white rounded-full transition-transform duration-300 ease-in-out ${
               isHovered
