@@ -1,8 +1,7 @@
 //Components
-import BannerHome from '../components/banner/BannerHome';
-import FramerText from '../components/content/FramerText';
-import Products from '../components/content/Products';
-
+import BannerHome from "../components/banner/BannerHome";
+import FramerText from "../components/content/FramerText";
+import Products from "../components/content/Products";
 
 function Home() {
   return (
@@ -13,7 +12,7 @@ function Home() {
 
       <FramerText />
     </div>
-  )
+  );
 }
 
 export default Home;
