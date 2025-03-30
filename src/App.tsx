@@ -7,7 +7,6 @@ import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
 import Notfound from "./pages/Notfound";
 
-
 function App() {
   return (
     <BrowserRouter>
