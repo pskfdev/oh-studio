@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function Contact() {
+  useEffect(() => {
+    document.title = "Contact | HO.STUDIO";
+  }, []);
+
   return (
     <section className="w-full h-[60vh] text-center flex justify-center items-center">
       <div className="space-y-2">
