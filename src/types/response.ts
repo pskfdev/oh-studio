@@ -14,4 +14,3 @@ export type DataFormType = {
 export type OptionType = {
   [key: number]: string;
 };
-

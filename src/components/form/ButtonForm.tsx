@@ -17,11 +17,12 @@ function ButtonForm({
   answers,
   idData,
   dataLength,
-  setIsFinish
+  setIsFinish,
 }: Props) {
   return (
     <div className="w-full flex justify-between items-center mt-4">
       <button
+        type="button"
         className={`w-20 py-2 rounded-md cursor-not-allowed text-white ${step != 0 ? "bg-gray-400 cursor-pointer" : "bg-gray-300 cursor-not-allowed"}`}
         onClick={previousStep}
         disabled={step === 0}
@@ -31,6 +32,7 @@ function ButtonForm({
 
       {step < dataLength - 1 ? (
         <button
+          type="button"
           onClick={nextStep}
           className={`w-20 py-2 rounded-md text-white ${
             answers[idData]
@@ -43,6 +45,7 @@ function ButtonForm({
         </button>
       ) : (
         <button
+          type="button"
           onClick={() => setIsFinish(true)}
           className={`w-20 py-2 rounded-md text-white bg-blue-500 cursor-pointer`}
         >

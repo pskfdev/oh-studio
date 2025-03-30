@@ -1,7 +1,7 @@
 type Props = {
   title: string;
   choice: string[];
-  handleSelect: (option:string) => void;
+  handleSelect: (option: string) => void;
   name: string;
 };
 
@@ -18,9 +18,9 @@ function Question({ title, choice, handleSelect, name }: Props) {
 
       {/* ตัวเลือก */}
       <div className="space-y-2">
-        {choice.map((option, idx) => (
+        {choice.map((option) => (
           <div
-            key={idx}
+            key={option}
             className="flex items-center ps-4 border border-slate-300 bg-slate-50 rounded-xl"
             onClick={() => handleSelect(option)}
           >

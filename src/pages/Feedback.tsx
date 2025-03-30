@@ -13,7 +13,11 @@ function Feedback() {
   return (
     <section className="w-full min-h-[60vh] flex flex-col items-center justify-center">
       <div className="p-6 rounded-lg shadow-md w-full max-w-md opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]">
-        {isWelcome ? <WelcomeForm setIsWelcome={setIsWelcome} /> : <QuestionForm />}
+        {isWelcome ? (
+          <WelcomeForm setIsWelcome={setIsWelcome} />
+        ) : (
+          <QuestionForm />
+        )}
       </div>
     </section>
   );
