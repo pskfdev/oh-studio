@@ -1,9 +1,10 @@
 # Project Test Frontend Aquila-studio
 
 โปรเจคแบบทดสอบเขียนเว็บไซต์ตามโจทย์ของบริษัท Aquila studio โดยใช้ `VITE React.ts framework`
-`โจทย์ คือ เขียนหน้าเว็บไซต์ตามดีไซน์ของเว็บ Frontend Practice โปรเจค Oh.studio`
 
-สิ่งที่ทำ*ตามโจท์*
+> `โจทย์ คือ เขียนหน้าเว็บไซต์ตามดีไซน์ของเว็บ Frontend Practice โปรเจค Oh.studio`
+
+สิ่งที่ทำ **ตามโจทย์**
 
 - สร้างเว็บไซต์ตามดีไซน์ มีทั้งหมด 4 หน้า คือ home , profile , contact , feedback
 - สร้าง Navigation bar ตามดีไซน์
