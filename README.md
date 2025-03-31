@@ -25,4 +25,6 @@
 
 ## website & design
 
-> [Website Oh-Studio](https://oh-studio-dev.netlify.app/) > [Design Oh-Studio](https://www.frontendpractice.com/projects/oh-studio)
+> [Website Oh-Studio](https://oh-studio-dev.netlify.app/)
+
+> [Design Oh-Studio](https://www.frontendpractice.com/projects/oh-studio)
