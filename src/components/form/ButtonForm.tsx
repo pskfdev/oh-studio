@@ -45,7 +45,7 @@ function ButtonForm({
         <button
           type="button"
           onClick={() => setIsFinish(true)}
-          className={`w-20 py-2 rounded-md text-white bg-blue-500 cursor-pointer`}
+          className="w-20 py-2 rounded-md text-white bg-blue-500 cursor-pointer"
         >
           Finish
         </button>

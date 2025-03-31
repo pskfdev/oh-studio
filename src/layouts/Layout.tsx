@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen relative">
+    <main className="flex flex-col min-h-screen relative">
       <Navbar />
 
       <div className="flex-grow">
@@ -13,7 +13,7 @@ function Layout() {
       </div>
 
       <Footer />
-    </div>
+    </main>
   );
 }
 

@@ -7,12 +7,12 @@ interface Props {
 function WelcomeForm({ setIsWelcome }: Props) {
   return (
     <>
-      <div className="space-y-1">
+      <article className="space-y-1">
         <h3>Welcome !</h3>
         <p className="text-custom-gray">
           Thanks for providing your feedback - let's go !
         </p>
-      </div>
+      </article>
 
       <div className="w-full mt-4 flex items-center space-x-4 py-5">
         <button

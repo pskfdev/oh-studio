@@ -9,15 +9,15 @@ function Question({ title, choice, handleSelect, name }: Props) {
   return (
     <>
       {/* คำถาม */}
-      <div className="space-y-1 my-4">
+      <article className="space-y-1 my-4">
         <h3>{title}</h3>
         <p className="text-custom-gray">
           Please select one of the following options:
         </p>
-      </div>
+      </article>
 
       {/* ตัวเลือก */}
-      <div className="space-y-2">
+      <article className="space-y-2">
         {choice &&
           choice.map((option) => (
             <div
@@ -40,7 +40,7 @@ function Question({ title, choice, handleSelect, name }: Props) {
               </label>
             </div>
           ))}
-      </div>
+      </article>
     </>
   );
 }

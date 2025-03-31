@@ -10,13 +10,13 @@ function Home() {
   }, []);
 
   return (
-    <div className="opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]">
+    <main className="opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]">
       <BannerHome />
 
       <Products />
 
       <FramerText />
-    </div>
+    </main>
   );
 }
 

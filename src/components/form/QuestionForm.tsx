@@ -8,7 +8,7 @@ import ResultForm from "./ResultForm";
 import { DataFormType } from "../../types/response";
 import { OptionType } from "../../types/response";
 
-const steps: DataFormType[] = [
+const dataForm: DataFormType[] = [
   {
     id: 1,
     question: "What's your role ?",
@@ -50,7 +50,7 @@ function QuestionForm() {
   const [isFinish, setIsFinish] = useState<boolean>(false);
 
   const handleSelect = (option: string) => {
-    setAnswers({ ...answers, [steps[step].id]: option });
+    setAnswers({ ...answers, [dataForm[step].id]: option });
   };
 
   const previousStep = () => {
@@ -58,20 +58,20 @@ function QuestionForm() {
   };
 
   const nextStep = () => {
-    if (step < steps.length - 1) setStep(step + 1);
+    if (step < dataForm.length - 1) setStep(step + 1);
   };
 
   return (
     <>
       {isFinish ? (
-        <ResultForm steps={steps} answers={answers} />
+        <ResultForm dataForm={dataForm} answers={answers} />
       ) : (
         <>
           <Question
-            title={steps[step]?.question}
-            choice={steps[step]?.options}
+            title={dataForm[step]?.question}
+            choice={dataForm[step]?.options}
             handleSelect={handleSelect}
-            name={steps[step]?.question}
+            name={dataForm[step]?.question}
           />
 
           <ButtonForm
@@ -79,12 +79,12 @@ function QuestionForm() {
             previousStep={previousStep}
             nextStep={nextStep}
             answers={answers}
-            idData={steps[step]?.id}
+            idData={dataForm[step]?.id}
             setIsFinish={setIsFinish}
           />
 
           <div className="mt-4">
-            <ProgressBar width={(step + 1) / steps.length} />
+            <ProgressBar width={(step + 1) / dataForm.length} />
           </div>
         </>
       )}

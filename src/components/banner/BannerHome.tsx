@@ -1,7 +1,7 @@
 function BannerHome() {
   return (
-    <div className="w-full h-[70vh] flex justify-center items-center">
-      <div className="text-center space-y-7">
+    <section className="w-full h-[70vh] flex justify-center items-center">
+      <article className="text-center space-y-7">
         <div className="w-full max-w-[700px] mx-auto">
           <h1 className="text-4xl lg:text-6xl">
             A brand and product designer working with clients globally
@@ -15,8 +15,8 @@ function BannerHome() {
             Design Systems
           </p>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 

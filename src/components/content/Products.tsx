@@ -28,13 +28,13 @@ function Products() {
   }, []);
 
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-10 py-10 px-5 lg:px-28">
+    <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-10 py-10 px-5 lg:px-28">
       {data ? (
         data.map((item) => <ProductCard key={item.id} item={item} />)
       ) : (
         <p className="text-center">No, Data product.</p>
       )}
-    </div>
+    </section>
   );
 }
 

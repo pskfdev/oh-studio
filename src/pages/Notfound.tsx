@@ -3,7 +3,7 @@ import { Link } from "react-router";
 function Notfound() {
   return (
     <section className="w-full h-screen text-center flex justify-center items-center">
-      <div className="space-y-2">
+      <article className="space-y-2">
         <h1>Page not found !</h1>
         <Link
           to="/"
@@ -11,7 +11,7 @@ function Notfound() {
         >
           Home page
         </Link>
-      </div>
+      </article>
     </section>
   );
 }
