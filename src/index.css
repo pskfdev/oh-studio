@@ -15,13 +15,13 @@
     @apply text-[18px] font-semibold;
   }
   h4 {
-    @apply text-base font-bold;
+    @apply text-base font-semibold;
   }
   h5 {
-    @apply text-[13.28px] font-bold;
+    @apply text-[13.28px] font-semibold;
   }
   h6 {
-    @apply text-[10.72px] font-bold;
+    @apply text-[10.72px] font-semibold;
   }
   p {
     @apply text-sm tracking-tighter;
